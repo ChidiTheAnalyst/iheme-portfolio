@@ -1,0 +1,53 @@
+/* SMOOTH SCROLLING */
+html {
+    scroll-behavior: smooth;
+}
+
+/* CUSTOM GLOW EFFECTS FOR TEXT */
+.glow-cyan {
+    text-shadow: 0 0 30px rgba(34, 211, 238, 0.6);
+}
+
+.glow-purple {
+    text-shadow: 0 0 30px rgba(168, 85, 247, 0.6);
+}
+
+/* MESH BACKGROUND PATTERN */
+body {
+    background-color: #0b1120;
+    /* Subtle network dot pattern */
+    background-image:
+        radial-gradient(circle at 2px 2px, rgba(255,255,255,0.03) 1px, transparent 0);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+}
+
+/* BLOB PULSE ANIMATION */
+@keyframes pulse {
+    0%, 100% { opacity: 0.4; transform: scale(1) translate(0, 0); }
+    50% { opacity: 0.6; transform: scale(1.1) translate(10px, -10px); }
+}
+
+.animate-pulse {
+    animation: pulse 10s infinite ease-in-out;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0b1120;
+}
+::-webkit-scrollbar-thumb {
+    background: #1f2937;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #374151;
+}
+
+/* SECTION PADDING FOR SMOOTH SCROLL OFFSET */
+section {
+    scroll-margin-top: 80px;
+}
